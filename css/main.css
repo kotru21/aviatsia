@@ -28,6 +28,34 @@ a {
   padding-left: 15rem;
   padding-right: 15rem;
 }
+section {
+  margin-top: 2rem;
+}
+blockquote-sign {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+blockquote-sign:before {
+  content: open-quote;
+  margin-right: 1rem;
+}
+
+blockquote-sign:after {
+  content: close-quote;
+  margin-left: 1rem;
+}
+
+blockquote-sign:before,
+blockquote-sign:after {
+  display: inline-block;
+  vertical-align: bottom;
+  color: black;
+  opacity: 0.6;
+  font-size: 4em;
+  top: 0.2em;
+  position: relative;
+}
 @media (max-width: 600px) {
   .content {
     margin: 0;
