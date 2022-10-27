@@ -25,12 +25,16 @@ a {
 .leftcont {
   color: white;
   padding-top: 10rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 @media (max-width: 600px) {
   .content {
     margin: 0;
     padding: 1rem;
+  }
+  .leftcont {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
