@@ -37,4 +37,8 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .image-container {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
 }
