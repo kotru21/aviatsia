@@ -4,8 +4,15 @@ h1 {
 p {
   font-size: 16px;
 }
+bigfont {
+  font-size: 5rem;
+  font-weight: 500;
+}
 @media (max-width: 600px) {
   h1 {
+    font-size: 3rem;
+  }
+  bigfont {
     font-size: 3rem;
   }
 }

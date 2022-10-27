@@ -8,8 +8,8 @@ body {
   max-width: 100%;
 }
 .content {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
   padding-left: 4rem;
   padding-right: 4rem;
   padding-top: 2rem;
@@ -70,7 +70,7 @@ blockquote-sign:after {
     margin-right: -1rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .content {
     margin-left: 18rem;
     margin-right: 18rem;
