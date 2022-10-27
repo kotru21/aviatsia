@@ -72,7 +72,7 @@ blockquote-sign:after {
 }
 @media (min-width: 1200px) {
   .content {
-    margin-left: 14rem;
-    margin-right: 14rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
   }
 }
