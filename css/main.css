@@ -6,7 +6,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 100%;
-  background: url("../src/img/header.webp"), rgba(0, 0, 0, 0.2);
+  background: url("../src/img/header.webp"), #cccccce5;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -108,9 +108,25 @@ blockquote-sign:after {
     background-size: 120%;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 900px) {
+  body {
+    background: url("../src/img/air.webp");
+    background-size: 10%;
+  }
   .content {
     margin-left: 18rem;
     margin-right: 18rem;
+    background: white;
+  }
+  .pchide {
+    display: none;
+  }
+}
+.mobilehide {
+  display: flex;
+}
+@media (max-width: 900px) {
+  .mobilehide {
+    display: none;
   }
 }
