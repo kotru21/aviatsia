@@ -32,7 +32,6 @@ img {
   height: auto;
 }
 .img-container {
-  width: 100%;
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
 }
@@ -97,7 +96,8 @@ blockquote-sign:after {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  .image-container {
+  .image-container,
+  .img-container {
     margin-left: -1rem;
     margin-right: -1rem;
   }
