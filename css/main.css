@@ -16,8 +16,15 @@ body {
   margin-right: 6rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
+}
+.content.hero-name {
+  background: #1d1d1d25;
+  margin: 0;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  text-align: center;
 }
 img {
   width: 100%;
@@ -80,6 +87,11 @@ blockquote-sign:after {
   .content {
     margin: 0;
     padding: 1rem;
+  }
+  .content.hero-name {
+    background: #1d1d1d25;
+    margin: 0;
+    padding: 1rem 0 2rem 0;
   }
   .leftcont {
     padding-left: 1rem;
