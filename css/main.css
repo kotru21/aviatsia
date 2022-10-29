@@ -20,7 +20,7 @@ body {
   padding-bottom: 2rem;
 }
 .content.hero-name {
-  background: #1d1d1d25;
+  background: rgba(0, 0, 0, 0.05);
   margin: 0;
   padding-left: 14rem;
   padding-right: 14rem;
@@ -89,7 +89,6 @@ blockquote-sign:after {
     padding: 1rem;
   }
   .content.hero-name {
-    background: #1d1d1d25;
     margin: 0;
     padding: 1rem 0 2rem 0;
   }
