@@ -42,15 +42,21 @@ img {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
+.img-container {
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
 a {
   color: white !important;
 }
 .leftcont {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
-  padding-top: 10rem;
+  margin-top: 10rem;
   padding-left: 15rem;
   padding-right: 15rem;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
 }
 .carousel {
   text-align: center;
