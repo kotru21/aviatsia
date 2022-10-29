@@ -6,7 +6,7 @@ body {
   height: 100%;
   width: 100%;
   max-width: 100%;
-  background: url("../src/img/header.webp"), #1d1d1d;
+  background: url("../src/img/header.webp"), rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -39,11 +39,14 @@ a {
   color: white !important;
 }
 .leftcont {
-  background: #1d1d1d83;
+  background: rgba(0, 0, 0, 0.05);
   color: white;
   padding-top: 10rem;
   padding-left: 15rem;
   padding-right: 15rem;
+}
+.carousel {
+  text-align: center;
 }
 section {
   margin-top: 2rem;
