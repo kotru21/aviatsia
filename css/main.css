@@ -71,6 +71,29 @@ img {
 a {
   color: white !important;
 }
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .leftcont {
   background: rgba(0, 0, 0, 0.2);
   color: white;
@@ -139,10 +162,6 @@ blockquote-sign:after {
     margin: 0;
     padding: 1rem 0 2rem 0;
   }
-  .leftcont {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
   .image-container,
   .img-container {
     margin-left: -1rem;
@@ -175,5 +194,15 @@ blockquote-sign:after {
 @media (max-width: 900px) {
   .mobilehide {
     display: none;
+  }
+  .leftcont {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-item {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(85, 85, 85, 0.4));
+    max-width: 20rem;
+    margin-left: -0.8rem;
+    padding-left: 0.8rem;
   }
 }
