@@ -176,6 +176,10 @@ blockquote-sign:after {
     background: url("../src/img/air.webp");
     background-size: 10%;
   }
+  .top-padding {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
   .content {
     margin-left: 18rem;
     margin-right: 18rem;
