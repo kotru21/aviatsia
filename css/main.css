@@ -195,7 +195,31 @@ blockquote-sign:after {
 .mobilehide {
   display: flex;
 }
+.quest-img {
+  width: 4rem;
+}
+.row {
+  margin-bottom: 2.5rem;
+}
+.column {
+  width: 50%;
+}
+.quest-container {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.hover {
+  transition: 1s;
+}
+.hover:hover {
+  width: 98%;
+  opacity: 0.9;
+}
 @media (max-width: 900px) {
+  .column {
+    width: 100%;
+    text-align: center;
+  }
   .mobilehide {
     display: none;
   }
