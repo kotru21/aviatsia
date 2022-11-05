@@ -75,8 +75,17 @@ a {
   padding-left: 0.1rem;
   padding-right: 2rem !important;
   border-radius: 0.2rem;
-  backdrop-filter: blur(10px);
   transform: translate3d(0, 0, 0);
+  animation: blurry 1s;
+  backdrop-filter: blur(10px);
+}
+@keyframes blurry {
+  from {
+    backdrop-filter: blur(0);
+  }
+  to {
+    backdrop-filter: blur(10px);
+  }
 }
 a.active {
   background: rgba(128, 128, 128, 0.6);
