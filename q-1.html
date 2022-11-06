@@ -46,7 +46,7 @@
     <script src="./src/js/ViewportAnimate.js"></script>
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/text.css" rel="stylesheet" />
-    <title>Карват В. Н.</title>
+    <title>Веб-квест «Легендарные истребители/ Вастелины неба »</title>
   </head>
   <body>
     <div class="hello_container">
@@ -89,11 +89,11 @@
         </div>
       </nav>
       <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
-        <div class="leftcont" style="margin-top: 1rem">
-          <h2>Веб-квест «Легендарные истребители/ Вастелины неба »</h2>
+        <div class="leftcont" style="padding-top: 0; margin-top: -2rem">
           <div class="quiz-container">
             <div id="quiz"></div>
           </div>
+
           <button id="previous">Предыдущий</button>
           <button id="next">Следующий</button>
           <button id="submit">Проверить</button>
@@ -183,7 +183,31 @@
   }
   .quiz-container {
     position: relative;
-    height: 200px;
+    height: 31rem;
     margin-top: 40px;
+  }
+
+  .script-plane {
+    width: 100%;
+  }
+  @media (min-width: 900px) {
+    button {
+      margin-top: 8rem;
+    }
+    .questions-plane {
+      width: 50%;
+    }
+    .questions-que {
+      padding-top: 8rem;
+      width: 50%;
+    }
+    .script-plane {
+      display: flex;
+      justify-content: left;
+    }
+    .questions {
+      display: flex;
+      justify-content: right;
+    }
   }
 </style>

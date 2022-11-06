@@ -25,9 +25,15 @@
       output.push(
         `
           <div class="slide">
-            <img src="./src/img/quizz/${currentQuestion.correctAnswer}.png" alt="самолёт" style="width: 5rem">
+          <div class="questions">
+          <div class="questions-plane">
+            <img src="./src/img/quizz/${currentQuestion.correctAnswer}.webp" alt="самолёт" class="script-plane">
+            </div>
+            <div class="questions-que">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
+            </div>
+            </div>
           </div>`
       );
     });
