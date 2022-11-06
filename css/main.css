@@ -194,6 +194,14 @@ blockquote-sign:after {
   }
 }
 @media (min-width: 900px) {
+  .quest-padding-left {
+    margin-left: 7rem;
+    padding-right: 15rem !important;
+  }
+  .column-pic {
+    width: 10% !important;
+  }
+
   body {
     background: url("../src/img/air.webp");
     background-size: 10%;
@@ -224,8 +232,9 @@ blockquote-sign:after {
   margin-bottom: 2.5rem;
 }
 .column {
-  width: 50%;
+  width: max-content;
 }
+
 .quest-container {
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -238,6 +247,10 @@ blockquote-sign:after {
   opacity: 0.9;
 }
 @media (max-width: 900px) {
+  .quest-padding-top-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
   .column {
     width: 100%;
     text-align: center;
