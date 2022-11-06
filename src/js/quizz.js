@@ -107,7 +107,7 @@
   const submitButton = document.getElementById("submit");
   const myQuestions = [
     {
-      question: "Что это за самолёт?",
+      question: "<h1>Что это за самолёт?</h1>",
       answers: {
         a: "МИг-29",
         b: "СУ-27",
@@ -117,7 +117,7 @@
       correctAnswer: "a",
     },
     {
-      question: "Что это за самолёт?",
+      question: "<h1>Что это за самолёт?</h1>",
       answers: {
         a: "МИг-29",
         b: "СУ-27",
@@ -127,7 +127,7 @@
       correctAnswer: "c",
     },
     {
-      question: "Что это за самолёт?",
+      question: "<h1>Что это за самолёт?</h1>",
       answers: {
         a: "МИг-29",
         b: "СУ-27",
@@ -137,7 +137,7 @@
       correctAnswer: "d",
     },
     {
-      question: "Что это за самолёт?",
+      question: "<h1>Что это за самолёт?</h1>",
       answers: {
         a: "МИг-29",
         b: "СУ-27",

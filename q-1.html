@@ -93,10 +93,11 @@
           <div class="quiz-container">
             <div id="quiz"></div>
           </div>
-
-          <button id="previous">Предыдущий</button>
-          <button id="next">Следующий</button>
-          <button id="submit">Проверить</button>
+          <div class="button-div">
+            <button id="previous">Предыдущий</button>
+            <button id="next">Следующий</button>
+            <button id="submit">Проверить</button>
+          </div>
           <div id="results"></div>
           <script src="./src/js/quizz.js"></script>
         </div>
@@ -141,7 +142,9 @@
 
 <style>
   @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
+  h1 {
+    margin-bottom: 2rem;
+  }
   .question {
     font-size: 30px;
     margin-bottom: 10px;
@@ -165,9 +168,10 @@
     padding: 20px;
     cursor: pointer;
     margin-bottom: 20px;
-    margin-top: 4rem;
   }
-
+  .button-div {
+    margin-top: 38vw;
+  }
   .slide {
     position: absolute;
     left: 0px;
@@ -190,7 +194,16 @@
   .script-plane {
     width: 100%;
   }
+  footer {
+    margin-top: 10rem;
+  }
   @media (min-width: 900px) {
+    .button-div {
+      margin: 0;
+    }
+    footer {
+      margin: 0;
+    }
     button {
       margin-top: 8rem;
     }
