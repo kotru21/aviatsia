@@ -14,19 +14,21 @@
         // ...add an HTML radio button
         answers.push(
           `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
-              </label>`
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
         );
       }
 
       // add this question and its answers to the output
       output.push(
-        `<div class="slide">
-              <div class="question"> ${currentQuestion.question} </div>
-              <div class="answers"> ${answers.join("")} </div>
-            </div>`
+        `
+          <div class="slide">
+            <img src="./src/img/quizz/${currentQuestion.correctAnswer}.png" alt="самолёт" style="width: 5rem">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
       );
     });
 
@@ -99,32 +101,44 @@
   const submitButton = document.getElementById("submit");
   const myQuestions = [
     {
-      question: "Who invented JavaScript?",
+      question: "Что это за самолёт?",
       answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich",
+        a: "МИг-29",
+        b: "СУ-27",
+        c: "СУ-30",
+        d: "ИЛ -76",
+      },
+      correctAnswer: "a",
+    },
+    {
+      question: "Что это за самолёт?",
+      answers: {
+        a: "МИг-29",
+        b: "СУ-27",
+        c: "СУ-30",
+        d: "ИЛ -76",
       },
       correctAnswer: "c",
     },
     {
-      question: "Which one of these is a JavaScript package manager?",
+      question: "Что это за самолёт?",
       answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm",
-      },
-      correctAnswer: "c",
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint",
+        a: "МИг-29",
+        b: "СУ-27",
+        c: "СУ-30",
+        d: "ИЛ -76",
       },
       correctAnswer: "d",
+    },
+    {
+      question: "Что это за самолёт?",
+      answers: {
+        a: "МИг-29",
+        b: "СУ-27",
+        c: "СУ-30",
+        d: "ИЛ -76",
+      },
+      correctAnswer: "b",
     },
   ];
 
