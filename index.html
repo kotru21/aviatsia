@@ -44,6 +44,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./src/js/ViewportAnimate.js"></script>
+    <script src="./src/js/HidePanel.js"></script>
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/text.css" rel="stylesheet" />
     <title>Добро пожаловать</title>
@@ -58,6 +59,9 @@
           >
           <button
             class="navbar-toggler"
+            id="btn-display"
+            onclick="HidePanel()"
+            value="1"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -88,13 +92,13 @@
           </div>
         </div>
       </nav>
-      <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
+      <div style="height: 100%; background-repeat: no-repeat; background-size: cover" id="panel">
         <div class="leftcont">
           <h1>проект "НАВЕЧНО УЛЕТЕВШИЕ В ПАМЯТЬ"</h1>
           <div class="top-padding">
             <img src="./src/img/logo.webp" style="width: 6em; padding-right: 1rem; float: left" />
 
-            <h2 style="opacity: 0.6; padding-top: 0.5rem">ГУО " ГИМНАЗИЯ №2 г.БАРАНОВИЧИ "</h2>
+            <h2 style="opacity: 0.6; padding-top: 0.5rem; border: none">ГУО " ГИМНАЗИЯ №2 г.БАРАНОВИЧИ "</h2>
           </div>
         </div>
       </div>

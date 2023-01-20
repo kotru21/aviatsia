@@ -183,6 +183,12 @@ blockquote-sign:after {
 }
 
 @media (max-width: 600px) {
+  .nav-link {
+    border-left: 0.5rem solid rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.5rem;
+
+    margin-top: 0.5rem;
+  }
   .col {
     width: 100rem;
   }
@@ -215,9 +221,6 @@ blockquote-sign:after {
   .quest-padding-left {
     margin-left: 7rem;
     padding-right: 15rem !important;
-  }
-  .column-pic {
-    width: 10% !important;
   }
 
   body {
@@ -253,16 +256,14 @@ blockquote-sign:after {
   width: max-content;
 }
 
-.quest-container {
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+.panel {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
 }
-.hover {
-  transition: 1s;
-}
-.hover:hover {
-  width: 98%;
-  opacity: 0.9;
+.panel-transition {
+  visibility: hidden;
+  opacity: 0;
 }
 @media (max-width: 900px) {
   .quest-padding-top-bottom {

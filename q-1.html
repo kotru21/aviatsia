@@ -88,7 +88,7 @@
           </div>
         </div>
       </nav>
-      <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
+      <div class="mobile-black" style="height: 100%; background-repeat: no-repeat; background-size: cover">
         <div class="leftcont" style="padding-top: 0; margin-top: -2rem">
           <div class="quiz-container">
             <div id="quiz"></div>
@@ -144,6 +144,11 @@
   @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
   h1 {
     margin-bottom: 2rem;
+  }
+  @media (max-width: 900px) {
+    .mobile-black {
+      background: rgba(0, 0, 0, 0.4);
+    }
   }
   .question {
     font-size: 30px;

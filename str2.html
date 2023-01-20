@@ -44,6 +44,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./src/js/ViewportAnimate.js"></script>
+    <script src="./src/js/HidePanel.js"></script>
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/text.css" rel="stylesheet" />
     <title>Карват В. Н.</title>
@@ -59,6 +60,9 @@
           <button
             class="navbar-toggler"
             type="button"
+            id="btn-display"
+            onclick="HidePanel()"
+            value="1"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
@@ -88,7 +92,7 @@
           </div>
         </div>
       </nav>
-      <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
+      <div style="height: 100%; background-repeat: no-repeat; background-size: cover" id="panel">
         <div class="leftcont">
           <h1>Карват Владимир Николаевич</h1>
           <h2 style="opacity: 0.6; padding-top: 0.5rem">герой Беларуси</h2>

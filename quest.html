@@ -44,6 +44,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./src/js/ViewportAnimate.js"></script>
+    <script src="./src/js/HidePanel.js"></script>
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/text.css" rel="stylesheet" />
     <title>Веб-квест</title>
@@ -58,6 +59,9 @@
           >
           <button
             class="navbar-toggler"
+            id="btn-display"
+            onclick="HidePanel()"
+            value="1"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -88,7 +92,7 @@
           </div>
         </div>
       </nav>
-      <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
+      <div style="height: 100%; background-repeat: no-repeat; background-size: cover" id="panel">
         <div class="leftcont">
           <h1>ВИРТУАЛЬНАЯ КВЕСТ-КОМНАТА "АЛЛЕЯ АВИАТОРОВ"</h1>
         </div>
@@ -104,12 +108,10 @@
       </div>
     </div> -->
     <div class="content">
-      <span class="w-100 text-center">
-        <h1 class="text-center">Предлагаем на выбор три веб-квеста</h1>
-      </span>
-      <div class="container quest-container">
+      <h1 style="padding-bottom: 1rem">Предлагаем на выбор три веб-квеста</h1>
+
+      <div class="container">
         <div class="row">
-          <div class="column column-pic"><img src="./src/img/1.webp" class="quest-img" alt="1" /></div>
           <div class="column quest-padding-top-bottom">
             <h2>Веб-квест «Легендарные истребители/ Вастелины неба »</h2>
           </div>
@@ -121,40 +123,49 @@
             <p class="text-muted mt-2">Ориентирован на учащихся 12-15 лет</p>
           </div>
         </div>
-        <div class="row">
-          <div class="column column-pic"><img src="./src/img/2.webp" class="quest-img" alt="1" /></div>
-          <div class="column quest-padding-top-bottom">Описание квеста</div>
-        </div>
-        <div class="row">
-          <div class="column column-pic"><img src="./src/img/2.webp" class="quest-img" alt="1" /></div>
-          <div class="column quest-padding-top-bottom">Описание квеста</div>
-        </div>
       </div>
       <div class="img-container">
         <img src="./src/img/K84SX1CnG2s.webp" alt="картинка" />
       </div>
-      <div class="img-container">
-        <div class="content">
-          <p class="mb-lg-4">
-            Веб-квест «Никогда не забудем» знакомит с содержанием легендарной книги «Никогда не забудем», историей
-            Великой Отечественной войны в Беларуси, жизни белорусского народа в период немецкой оккупации, героизмом и
-            мужеством детей, проявленными в борьбе за победу.
-          </p>
-        </div>
+
+      <div class="content">
+        <p class="mb-lg-4">
+          Веб-квест «Никогда не забудем» знакомит с содержанием легендарной книги «Никогда не забудем», историей Великой
+          Отечественной войны в Беларуси, жизни белорусского народа в период немецкой оккупации, героизмом и мужеством
+          детей, проявленными в борьбе за победу.
+        </p>
       </div>
+
       <div class="img-container">
         <img src="./src/img/lxAskVcH1CA.webp" alt="картинка" />
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-lg=">
-            <a href="./q-1.html"><img src="./src/img/door.png" class="hover" /></a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./src/img/Quest-logos/quest1.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Веб-квест «Легендарные истребители/ Вастелины неба »</h5>
+                <p class="card-text">Виртуальный квест</p>
+                <a href="./q-1.html">
+                  <button type="button" class="btn btn-primary">Пройти</button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-lg">
-            <a href="./q-2.html"><img src="./src/img/door.png" class="hover" /></a>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="./src/img/logo.webp" class="card-img-top" alt="..." />
+              <div class="card-body"></div>
+            </div>
           </div>
-          <div class="col-lg">
-            <a href="./q-3.html"><img src="./src/img/door.png" class="hover" /></a>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="./src/img/logo.webp" class="card-img-top" alt="..." />
+              <div class="card-body"></div>
+            </div>
           </div>
         </div>
       </div>

@@ -44,6 +44,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="./src/js/ViewportAnimate.js"></script>
+    <script src="./src/js/HidePanel.js"></script>
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/text.css" rel="stylesheet" />
     <title>Куконенко Н. Б. и и Нечипорчик А. В.</title>
@@ -59,6 +60,9 @@
           <button
             class="navbar-toggler"
             type="button"
+            id="btn-display"
+            onclick="HidePanel()"
+            value="1"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
@@ -88,7 +92,7 @@
           </div>
         </div>
       </nav>
-      <div style="height: 100%; background-repeat: no-repeat; background-size: cover">
+      <div style="height: 100%; background-repeat: no-repeat; background-size: cover" id="panel">
         <div class="leftcont">
           <h1>
             Куконенко Никита Борисович<br />
