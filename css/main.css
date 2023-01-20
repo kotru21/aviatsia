@@ -72,6 +72,13 @@ img {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 .img-container {
   margin-left: -4rem;
   margin-right: -4rem;
@@ -81,31 +88,20 @@ img.image-resized {
   width: fit-content;
 }
 .image-resized > .carousel-item {
-  height: 40rem;
+  height: 50vh;
 }
 a {
   color: white !important;
 }
 .navbar a {
-  background: rgba(128, 128, 128, 0.2);
+  background: rgb(0, 0, 0, 0.2);
   margin-right: 1rem;
   padding-left: 0.1rem;
   padding-right: 2rem !important;
   border-radius: 0.2rem;
-  transform: translate3d(0, 0, 0);
-  animation: blurry 1s;
-  backdrop-filter: blur(10px);
-}
-@keyframes blurry {
-  from {
-    backdrop-filter: blur(0);
-  }
-  to {
-    backdrop-filter: blur(10px);
-  }
 }
 a.active {
-  background: rgba(128, 128, 128, 0.6);
+  background: rgb(0, 0, 0, 0.8);
 }
 a.navbar-brand {
   background: none;
@@ -141,15 +137,6 @@ a.navbar-brand {
   padding-right: 15rem;
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
-  backdrop-filter: blur(15px);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000;
-  transform: translate3d(0, 0, 0);
-  transform: translateZ(0);
 }
 .carousel {
   text-align: center;
@@ -208,6 +195,14 @@ blockquote-sign:after {
   }
   .hello_container {
     background-size: 170%;
+  }
+}
+@media (min-width: 1200px) {
+  .leftcont {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    width: 60%;
   }
 }
 @media (min-width: 900px) {
@@ -280,13 +275,12 @@ blockquote-sign:after {
     padding-right: 1rem;
   }
   a {
-    background: linear-gradient(to right, rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0));
     min-width: 20rem;
     margin-top: 0.2rem;
     padding-left: 0.4rem !important;
   }
   a.navbar-brand {
-    background: linear-gradient(to right, rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0));
+    background: rgba(0, 0, 0, 0.2);
     min-width: fit-content;
   }
 }
