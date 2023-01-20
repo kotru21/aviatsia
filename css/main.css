@@ -107,7 +107,7 @@ a {
   border-radius: 0.2rem;
 }
 a.active {
-  background: rgb(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0, 1);
 }
 a.navbar-brand {
   background: none;
@@ -184,7 +184,7 @@ blockquote-sign:after {
 
 @media (max-width: 600px) {
   .nav-link {
-    border-left: 0.5rem solid rgba(0, 0, 0, 0.6);
+    border-left: 0.5rem solid rgba(0, 0, 0, 1);
     margin-bottom: 0.5rem;
 
     margin-top: 0.5rem;
