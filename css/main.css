@@ -64,9 +64,24 @@ img {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
+.carousel-item > .img-container {
+  background: url("../src/img/slider-bg-starsvg.svg") !important;
+  background-position: center !important;
+}
+.carousel {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
 .img-container {
   margin-left: -4rem;
   margin-right: -4rem;
+}
+img.image-resized {
+  height: 100%;
+  width: fit-content;
+}
+.image-resized > .carousel-item {
+  height: 40rem;
 }
 a {
   color: white !important;
