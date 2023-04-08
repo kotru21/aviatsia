@@ -99,19 +99,7 @@ img.image-resized {
 a {
   color: white !important;
 }
-.navbar a {
-  background: rgb(0, 0, 0, 0.2);
-  margin-right: 1rem;
-  padding-left: 0.1rem;
-  padding-right: 2rem !important;
-  border-radius: 0.2rem;
-}
-a.active {
-  background: rgb(0, 0, 0, 1);
-}
-a.navbar-brand {
-  background: none;
-}
+
 .nav-link {
   display: inline-block;
   position: relative;
@@ -126,7 +114,7 @@ a.navbar-brand {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: black;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -138,8 +126,8 @@ a.navbar-brand {
 .leftcont {
   background: rgba(0, 0, 0, 0.2);
   color: white;
-  margin-top: 4.5rem;
-  padding-left: 15rem;
+  margin-top: 7rem;
+  padding-left: clamp(1rem, 12vw, 15rem);
   padding-right: 15rem;
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
@@ -181,12 +169,16 @@ blockquote-sign:after {
 .box > * {
   flex: 1 1 200px;
 }
-
+.navbar {
+  background: white;
+}
+.navbar * {
+  color: black !important;
+}
 @media (max-width: 600px) {
   .nav-link {
-    border-left: 0.5rem solid rgba(0, 0, 0, 1);
+    border-left: 0.25rem solid rgba(0, 0, 0, 1);
     margin-bottom: 0.5rem;
-
     margin-top: 0.5rem;
   }
   .col {
@@ -232,13 +224,14 @@ blockquote-sign:after {
     padding-bottom: 1rem;
   }
   .content {
-    margin-left: 18rem;
-    margin-right: 18rem;
+    margin-left: clamp(2rem, 16vw, 20rem);
+    margin-right: clamp(2rem, 16vw, 20rem);
     background: white;
   }
   .navbar {
-    padding-left: 19rem;
+    padding-left: clamp(1rem, 12vw, 15rem);
   }
+
   .pchide {
     display: none;
   }
@@ -287,7 +280,6 @@ blockquote-sign:after {
     padding-left: 0.4rem !important;
   }
   a.navbar-brand {
-    background: rgba(0, 0, 0, 0.2);
     min-width: fit-content;
   }
 }
