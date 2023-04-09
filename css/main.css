@@ -89,6 +89,10 @@ iframe {
   margin-left: -4rem;
   margin-right: -4rem;
 }
+.img-container img {
+  max-height: 30rem !important;
+  width: fit-content;
+}
 img.image-resized {
   height: 100%;
   width: fit-content;
