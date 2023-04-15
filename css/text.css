@@ -1,8 +1,12 @@
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+b {
+  font-weight: 600;
 }
 .leftcont p {
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
 }
 h2 {
   font-size: 2.5rem;
@@ -31,7 +35,7 @@ p.animate {
   }
 }
 bigfont {
-  font-size: 5rem;
+  font-size: 5.2rem;
   font-weight: 500;
 }
 @media (max-width: 600px) {

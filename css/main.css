@@ -2,6 +2,7 @@
   word-wrap: break-word;
 }
 body {
+  background: rgb(237, 237, 237);
   padding: 0;
   margin: 0;
 }
@@ -31,12 +32,52 @@ body {
   height: 100%;
   width: 100%;
   max-width: 100%;
-  background: url("../src/img/header.webp"), #cccccce5;
+  background: url("../src/img/header.webp");
   background-repeat: no-repeat;
   background-position: 25% 15%;
   transition-delay: 0.5s;
   background-size: contain;
   transition: 1s;
+}
+.round-container {
+  filter: drop-shadow(10px 10px 32px #33333311);
+
+  background: white;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 0 0 1rem 1rem;
+}
+.margin-container {
+  margin-top: 8rem;
+}
+.margin-left-p {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.margin-right-p {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.col-sm {
+  position: relative;
+  min-height: 5rem;
+}
+.gerb {
+  object-fit: cover;
+  width: 100%;
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  top: -4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quote-container {
+  padding-right: 20rem;
+}
+.about-baranovichi {
+  width: 50%;
 }
 .hello_container.animate {
   background-position: right;
@@ -133,8 +174,9 @@ a {
   transform-origin: bottom left;
 }
 .leftcont {
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
+  width: clamp(70rem, 60vw, 90rem);
+  font-weight: 1;
+  color: black;
   margin-top: 7rem;
   padding-left: clamp(1rem, 12vw, 15rem);
   padding-right: 15rem;
@@ -143,6 +185,27 @@ a {
 }
 .carousel {
   text-align: center;
+}
+.d-grid * {
+  margin-top: 0.6rem !important;
+  margin-right: 0.8rem;
+}
+.header-btn {
+  background: #3165f400;
+  color: black;
+  font-weight: 400;
+}
+.header-btn,
+.header-btn-active {
+  transition: 0.2s;
+}
+.header-btn:hover,
+.header-btn-active:hover {
+  background: #3165f4ad;
+  filter: drop-shadow(0 0 10px #3165f4ad);
+}
+.header-btn-active:hover {
+  background: #3165f4;
 }
 section {
   margin-top: 2rem;
@@ -178,8 +241,8 @@ blockquote-sign:after {
 .box > * {
   flex: 1 1 200px;
 }
-.navbar {
-  background: white;
+.button-margin {
+  margin-top: 2rem;
 }
 .navbar * {
   color: black !important;
@@ -212,20 +275,24 @@ blockquote-sign:after {
 }
 @media (min-width: 1200px) {
   .leftcont {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     padding-top: 2rem;
     padding-bottom: 4rem;
-    width: 60%;
   }
 }
 @media (min-width: 900px) {
+  .margin-top-header {
+    margin-top: 5rem;
+  }
+  .margin-top-qr {
+    margin-top: 8rem;
+  }
   .quest-padding-left {
     margin-left: 7rem;
     padding-right: 15rem !important;
   }
 
   body {
-    background: url("../src/img/air.webp");
+    /* background: url("../src/img/air.webp"); */
     background-size: 10%;
   }
   .top-padding {
@@ -235,7 +302,6 @@ blockquote-sign:after {
   .content {
     margin-left: clamp(2rem, 16vw, 20rem);
     margin-right: clamp(2rem, 16vw, 20rem);
-    background: white;
   }
   .navbar {
     padding-left: clamp(1rem, 12vw, 15rem);
@@ -268,6 +334,56 @@ blockquote-sign:after {
   opacity: 0;
 }
 @media (max-width: 900px) {
+  .row {
+    margin-bottom: 1rem !important;
+  }
+  .hello_container {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background: url("../src/img/header-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: 10% 60% !important;
+    background-size: cover;
+    transition-delay: 0.5s;
+    transition: 1s;
+  }
+  .margin-left-p,
+  .margin-right-p {
+    margin-top: 2rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .margin-top-qr {
+    margin-top: 6rem;
+  }
+  .quote-container {
+    padding-right: 0;
+  }
+  .button-margin {
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  .margin-container {
+    margin-top: 1rem;
+  }
+  .margin-right-p,
+  .margin-left-p {
+    margin-top: 0;
+  }
+  .round-container {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .gerb {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .leftcont {
+    width: 100%;
+  }
+  .gerb {
+    width: 10rem;
+  }
   .quest-padding-top-bottom {
     margin-top: 1rem;
     margin-bottom: 1rem;
