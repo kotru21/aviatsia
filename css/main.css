@@ -110,7 +110,6 @@ img {
 }
 .carousel-item > .img-container,
 .iframe-div {
-  background: url("../src/img/slider-bg-starsvg.svg") !important;
   background-position: center !important;
 }
 iframe {

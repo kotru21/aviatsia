@@ -19,6 +19,9 @@ p {
 p {
   opacity: 0;
 }
+.blockquote {
+  font-size: 1rem;
+}
 p.animate {
   animation: pAnimation 1s;
   opacity: 1;
