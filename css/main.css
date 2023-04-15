@@ -350,7 +350,7 @@ blockquote-sign:after {
   }
   .margin-left-p,
   .margin-right-p {
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
     margin-left: 1rem;
     margin-right: 1rem;
   }
