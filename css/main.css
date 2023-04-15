@@ -333,7 +333,7 @@ blockquote-sign:after {
   visibility: hidden;
   opacity: 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .row {
     margin-bottom: 1rem !important;
   }
