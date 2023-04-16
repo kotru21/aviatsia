@@ -1,6 +1,7 @@
 h1 {
   font-size: 4.5rem;
   font-weight: 600;
+  word-wrap: break-word !important;
 }
 b {
   font-weight: 600;

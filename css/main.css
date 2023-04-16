@@ -62,10 +62,10 @@ body {
   min-height: 5rem;
 }
 .gerb {
-  object-fit: cover;
-  width: 100%;
-  padding-left: 5.5vw;
-  padding-right: 5.5vw;
+  min-width: 18vw;
+  max-width: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   top: -4rem;
   position: absolute;
   left: 0;
@@ -83,12 +83,8 @@ body {
   background-position: right;
 }
 .content {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  margin-left: clamp(1rem, 19vw, 30rem);
+  margin-right: clamp(1rem, 19vw, 30rem);
 }
 .content.hero-name {
   background: #cccccc;
@@ -173,12 +169,11 @@ a {
   transform-origin: bottom left;
 }
 .leftcont {
-  width: clamp(70rem, 60vw, 90rem);
+  width: clamp(65vw, 60rem, 100vw);
   font-weight: 1;
   color: black;
   margin-top: 7rem;
   padding-left: clamp(1rem, 12vw, 15rem);
-  padding-right: 15rem;
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
 }
@@ -279,6 +274,12 @@ blockquote-sign:after {
   }
 }
 @media (min-width: 900px) {
+  .round-container .col-sm:first-child {
+    min-width: 12rem;
+  }
+  .leftcont {
+    padding-right: 15rem;
+  }
   .margin-top-header {
     margin-top: 5rem;
   }
@@ -298,10 +299,7 @@ blockquote-sign:after {
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
-  .content {
-    margin-left: clamp(2rem, 16vw, 20rem);
-    margin-right: clamp(2rem, 16vw, 20rem);
-  }
+
   .navbar {
     padding-left: clamp(1rem, 12vw, 15rem);
   }
@@ -331,6 +329,11 @@ blockquote-sign:after {
 .panel-transition {
   visibility: hidden;
   opacity: 0;
+}
+@media (max-width: 1200px) {
+  .mobilehide {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .row {
@@ -380,9 +383,7 @@ blockquote-sign:after {
   .leftcont {
     width: 100%;
   }
-  .gerb {
-    width: 10rem;
-  }
+
   .quest-padding-top-bottom {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -391,9 +392,7 @@ blockquote-sign:after {
     width: 100%;
     text-align: center;
   }
-  .mobilehide {
-    display: none;
-  }
+
   .leftcont {
     padding-left: 1rem;
     padding-right: 1rem;
