@@ -326,7 +326,9 @@ blockquote-sign:after {
 .column {
   width: max-content;
 }
-
+.hero-name .col-lg:nth-child(2) {
+  padding: 1rem 2rem 0 2rem;
+}
 .panel {
   visibility: visible;
   opacity: 1;
