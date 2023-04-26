@@ -370,9 +370,7 @@ blockquote-sign:after {
   .margin-top-qr {
     margin-top: 6rem;
   }
-  .quote-container {
-    padding-right: 0;
-  }
+  
   .button-margin {
     margin-top: 0.25rem;
     margin-bottom: 2rem;
@@ -427,6 +425,9 @@ blockquote-sign:after {
 .pchide{
 display: auto;
 }
+.quote-container {
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 1200px) {
