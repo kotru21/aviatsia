@@ -415,6 +415,12 @@ blockquote-sign:after {
     min-width: fit-content;
   }
 }
+@media (max-width: 900px){
+content {
+    margin: 0;
+    padding: 3rem;
+  }
+}
 @media (max-width: 1200px) {
   .mobilehide {
     display: none;
