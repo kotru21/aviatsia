@@ -435,6 +435,9 @@ display: auto;
     margin: 0 auto;
     padding: 1rem 0 2rem 0;
   }
+.col-sm{
+width: 100% !important;
+}
 }
 
 @media (min-width: 1200px) {
