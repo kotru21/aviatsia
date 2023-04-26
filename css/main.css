@@ -308,11 +308,7 @@ blockquote-sign:after {
 
   .navbar {
     padding-left: clamp(1rem, 12vw, 15rem);
-  }
-
-  .pchide {
-    display: none;
-  }
+  }
 }
 .mobilehide {
   display: flex;
@@ -338,11 +334,8 @@ blockquote-sign:after {
   visibility: hidden;
   opacity: 0;
 }
-@media (max-width: 1200px) {
-  .mobilehide {
-    display: none;
-  }
-}
+
+
 @media (max-width: 600px) {
   .slider-container {
     height: 14rem;
@@ -423,4 +416,21 @@ blockquote-sign:after {
   a.navbar-brand {
     min-width: fit-content;
   }
+}
+@media (max-width: 1200px) {
+  .mobilehide {
+    display: none;
+  }
+.pchide{
+display: auto;
+}
+}
+
+@media (min-width: 1200px) {
+  .pchide {
+    display: none;
+  }
+.mobilehide{
+display: auto;
+}
 }
