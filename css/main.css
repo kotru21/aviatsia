@@ -1,7 +1,4 @@
-img{
-min-width: 400px;
-max-width: 100%;
-}
+
 * {
   word-wrap: break-word;
 }
@@ -274,6 +271,12 @@ blockquote-sign:after {
     background-size: 170%;
   }
 }
+@media(max-width: 1200px){
+img{
+min-width: 400px;
+max-width: 100%;
+}
+}
 @media (min-width: 1200px) {
   .leftcont {
     padding-top: 2rem;
@@ -338,6 +341,10 @@ blockquote-sign:after {
 
 
 @media (max-width: 600px) {
+img{
+min-width: 200px;
+max-width: 100%;
+}
   .slider-container {
     height: 14rem;
   }
