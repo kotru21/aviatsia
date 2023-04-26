@@ -263,10 +263,7 @@ blockquote-sign:after {
     margin: 0;
     padding: 1rem;
   }
-  .content.hero-name {
-    margin: 0;
-    padding: 1rem 0 2rem 0;
-  }
+  
   .image-container,
   .img-container {
     margin-left: -1rem;
@@ -427,6 +424,10 @@ display: auto;
 }
 .quote-container {
     padding-right: 0;
+  }
+.content.hero-name {
+    margin: 0 auto;
+    padding: 1rem 0 2rem 0;
   }
 }
 
