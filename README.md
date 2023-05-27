@@ -16,5 +16,5 @@
 <p align="center">
     <img src="https://skillicons.dev/icons?i=html,js,jquery,css,bootstrap" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;а также&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <img src="https://skillicons.dev/icons?i=github,git,cloudflare" />
+    <img src="https://skillicons.dev/icons?i=vscode,github,git,cloudflare" />
 </p>
