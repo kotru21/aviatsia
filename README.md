@@ -4,10 +4,10 @@
   
 <a href="https://aviatsia.pages.dev">Ссылка на проект</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://docs.google.com/presentation/d/1qKdUbi99JrazF15yrZQhv6AnOwyGAnD1/edit?usp=share_link&ouid=112843533081520304421&rtpof=true&sd=true)">Презентация</a>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://kotikov.is-a.dev">Обо мне</a>
-  
+
 </div>
 
 ![filetree](https://github.com/kotru21/aviatsia/assets/88907641/35c67931-5672-47d7-bc36-1361c2f6e458)
