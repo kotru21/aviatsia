@@ -100,10 +100,10 @@ body {
   text-align: center;
 }
 img {
-  width: 100%;
-  max-width: 40rem;
+  max-height: 30rem;
   height: auto;
 }
+
 .img-container {
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -114,14 +114,20 @@ img {
 .iframe-div {
   background-position: center !important;
 }
+.carousel-item {
+  height: fit-content;
+}
+
 iframe {
   min-width: 100%;
   height: 60vw;
   max-height: 45rem;
 }
 .carousel {
+  overflow: hidden;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -144,9 +150,7 @@ img.image-resized {
   height: 100%;
   width: fit-content;
 }
-.image-resized > .carousel-item {
-  height: 50vh;
-}
+
 a {
   color: white !important;
 }
@@ -183,9 +187,7 @@ a {
   padding-bottom: 1.5rem;
   padding-top: 0.5rem;
 }
-.carousel {
-  text-align: center;
-}
+
 .d-grid * {
   margin-top: 0.6rem !important;
   margin-right: 0.8rem;
@@ -443,6 +445,9 @@ blockquote-sign:after {
 }
 
 @media (min-width: 900px) {
+  .carousel {
+    min-height: 30rem;
+  }
   .pchide {
     display: none !important;
   }
